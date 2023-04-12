@@ -1,5 +1,7 @@
+import { RatingBox } from "./components/ratingBox/RatingBox";
+
 function App() {
-  return <h1>Hello, World!</h1>;
+  return <RatingBox />;
 }
 
 export default App;
