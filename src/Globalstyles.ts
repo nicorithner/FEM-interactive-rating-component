@@ -6,7 +6,7 @@ const GlobalStyles = createGlobalStyle`
 */
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 /*
