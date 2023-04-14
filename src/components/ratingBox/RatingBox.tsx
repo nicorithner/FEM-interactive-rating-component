@@ -5,15 +5,18 @@ import {
   RBSubmitButton,
   RBTitle,
   RBWrapper,
-  StartIcon,
+  StarIcon,
+  StarIconWrapper,
   TextWrapper,
 } from "./RatingBox.styled";
-import startIcon from "../../assets/images/icon-star.svg";
+import starIcon from "../../assets/images/icon-star.svg";
 
 export const RatingBox = () => {
   return (
     <RBWrapper>
-      <StartIcon src={startIcon} alt="Start icon color yellow" />
+      <StarIconWrapper>
+        <StarIcon src={starIcon} alt="Start icon color yellow" />
+      </StarIconWrapper>
       <TextWrapper>
         <RBTitle>How did we do?</RBTitle>
         <RBDescription>
