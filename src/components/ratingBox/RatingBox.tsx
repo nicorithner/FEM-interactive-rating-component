@@ -15,7 +15,7 @@ export const RatingBox = () => {
   return (
     <RBWrapper>
       <StarIconWrapper>
-        <StarIcon src={starIcon} alt="Start icon color yellow" />
+        <StarIcon src={starIcon} alt="Thank you image" />
       </StarIconWrapper>
       <TextWrapper>
         <RBTitle>How did we do?</RBTitle>
