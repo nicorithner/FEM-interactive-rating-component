@@ -1,4 +1,5 @@
 export const PRIMARY = {
+  blackPearl: "hsla(216, 11.63%, 8.43%, 1)",
   darkBlue: "hsla(213, 19%, 18%, 1)",
   orange: "hsla(25, 97%, 53%, 1)",
 };
