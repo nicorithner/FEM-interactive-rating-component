@@ -10,6 +10,7 @@ import thankYouImage from "../../assets/images/illustration-thank-you.svg";
 
 type TYBoxProps = {
   display: boolean;
+  rating: string;
 };
 
 export const ThankYouBox = (props: TYBoxProps) => {
@@ -17,7 +18,7 @@ export const ThankYouBox = (props: TYBoxProps) => {
     <TYBoxWrapper display={props.display ? "flex" : "none"}>
       <TYBoxImg src={thankYouImage} />
       <TYBoxResult>
-        <TYBoxResultText>You selected 4 out of 5</TYBoxResultText>
+        <TYBoxResultText>You selected {props.rating} out of 5</TYBoxResultText>
       </TYBoxResult>
       <TYBoxTitle>Thank you!</TYBoxTitle>
       <TYBoxText>
