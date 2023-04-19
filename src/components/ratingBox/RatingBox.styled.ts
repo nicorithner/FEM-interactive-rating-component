@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { GRADIENTS, NEUTRAL, PRIMARY } from "../../constants";
 
-export const RBWrapper = styled.section`
+type Props = {
+  display: string;
+};
+
+export const RBWrapper = styled.section<Props>`
   border: 1px solid black;
   background: ${GRADIENTS.blackPearlGradient};
   height: 416px;
@@ -9,7 +13,7 @@ export const RBWrapper = styled.section`
   border-radius: 30px;
   padding: 32px;
   padding-right: 40px;
-  display: flex;
+  display: ${(p) => p.display};
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
@@ -61,7 +65,7 @@ export const RBNumbersRow = styled.div`
   width: 340px;
 `;
 
-export const RBNumberCircle = styled.div`
+export const RBNumberCircle = styled.button`
   background: ${PRIMARY.darkBlue};
   color: ${NEUTRAL.mediumGray};
   width: 51px;
@@ -75,6 +79,18 @@ export const RBNumberCircle = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background: ${PRIMARY.orange};
+    color: ${NEUTRAL.white};
+  }
+
+  &:focus {
+    background: ${NEUTRAL.mediumGray};
+    color: ${NEUTRAL.white};
+  }
 `;
 
 export const RBSubmitButton = styled.button`
@@ -91,4 +107,10 @@ export const RBSubmitButton = styled.button`
   font-size: ${16 / 16}rem;
   line-height: ${19 / 16}rem;
   letter-spacing: ${2 / 16}rem;
+  cursor: pointer;
+
+  &:hover {
+    background: ${NEUTRAL.white};
+    color: ${PRIMARY.orange};
+  }
 `;
