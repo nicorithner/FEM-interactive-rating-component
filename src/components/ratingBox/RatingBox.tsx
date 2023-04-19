@@ -14,6 +14,7 @@ import starIcon from "../../assets/images/icon-star.svg";
 type Props = {
   display: boolean;
   handleSubmit: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  getRating: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 };
 
 export const RatingBox = (props: Props) => {
@@ -30,11 +31,11 @@ export const RatingBox = (props: Props) => {
         </RBDescription>
       </TextWrapper>
       <RBNumbersRow>
-        <RBNumberCircle>1</RBNumberCircle>
-        <RBNumberCircle>2</RBNumberCircle>
-        <RBNumberCircle>3</RBNumberCircle>
-        <RBNumberCircle>4</RBNumberCircle>
-        <RBNumberCircle>5</RBNumberCircle>
+        <RBNumberCircle onClick={props.getRating}>1</RBNumberCircle>
+        <RBNumberCircle onClick={props.getRating}>2</RBNumberCircle>
+        <RBNumberCircle onClick={props.getRating}>3</RBNumberCircle>
+        <RBNumberCircle onClick={props.getRating}>4</RBNumberCircle>
+        <RBNumberCircle onClick={props.getRating}>5</RBNumberCircle>
       </RBNumbersRow>
       <RBSubmitButton onClick={props.handleSubmit}>SUBMIT</RBSubmitButton>
     </RBWrapper>
