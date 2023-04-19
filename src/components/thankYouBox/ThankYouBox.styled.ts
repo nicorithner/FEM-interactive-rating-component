@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import { GRADIENTS, NEUTRAL, PRIMARY } from "../../constants";
 
-export const TYBoxWrapper = styled.section`
+type Props = {
+  display: string
+}
+
+export const TYBoxWrapper = styled.section<Props>`
   border: 1px solid black;
   background: ${GRADIENTS.blackPearlGradient};
   height: 416px;
@@ -9,7 +13,7 @@ export const TYBoxWrapper = styled.section`
   border-radius: 30px;
   padding: 45px;
   padding-left: 32px;
-  display: flex;
+  display: ${p => p.display};
   flex-direction: column;
   justify-content: space-between;
   align-items: center;

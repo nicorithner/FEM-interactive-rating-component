@@ -7,9 +7,14 @@ import {
   TYBoxWrapper,
 } from "./ThankYouBox.styled";
 import thankYouImage from "../../assets/images/illustration-thank-you.svg";
-export const ThankYouBox = () => {
+
+type TYBoxProps = {
+  display: boolean;
+};
+
+export const ThankYouBox = (props: TYBoxProps) => {
   return (
-    <TYBoxWrapper>
+    <TYBoxWrapper display={props.display ? "flex" : "none"}>
       <TYBoxImg src={thankYouImage} />
       <TYBoxResult>
         <TYBoxResultText>You selected 4 out of 5</TYBoxResultText>
