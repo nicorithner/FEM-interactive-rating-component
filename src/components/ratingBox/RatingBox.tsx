@@ -11,9 +11,14 @@ import {
 } from "./RatingBox.styled";
 import starIcon from "../../assets/images/icon-star.svg";
 
-export const RatingBox = () => {
+type Props = {
+  display: boolean;
+  handleSubmit: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+};
+
+export const RatingBox = (props: Props) => {
   return (
-    <RBWrapper>
+    <RBWrapper display={props.display ? "flex" : "none"}>
       <StarIconWrapper>
         <StarIcon src={starIcon} alt="Thank you image" />
       </StarIconWrapper>
@@ -31,7 +36,7 @@ export const RatingBox = () => {
         <RBNumberCircle>4</RBNumberCircle>
         <RBNumberCircle>5</RBNumberCircle>
       </RBNumbersRow>
-      <RBSubmitButton>SUBMIT</RBSubmitButton>
+      <RBSubmitButton onClick={props.handleSubmit}>SUBMIT</RBSubmitButton>
     </RBWrapper>
   );
 };
