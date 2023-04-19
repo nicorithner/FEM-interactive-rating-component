@@ -1,21 +1,13 @@
 import styled from "styled-components";
 import { GRADIENTS, NEUTRAL, PRIMARY } from "../../constants";
+import { BoxWrapper } from "../App.styled";
 
 type Props = {
   display: string
 }
 
-export const TYBoxWrapper = styled.section<Props>`
-  border: 1px solid black;
-  background: ${GRADIENTS.blackPearlGradient};
-  height: 416px;
-  width: 412px;
-  border-radius: 30px;
-  padding: 45px;
-  padding-left: 32px;
-  display: ${p => p.display};
-  flex-direction: column;
-  justify-content: space-between;
+export const TYBoxWrapper = styled(BoxWrapper)<Props>`
+  display: ${(p) => p.display};
   align-items: center;
 `;
 

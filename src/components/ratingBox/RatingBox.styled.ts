@@ -1,21 +1,13 @@
 import styled from "styled-components";
 import { GRADIENTS, NEUTRAL, PRIMARY } from "../../constants";
+import { BoxWrapper } from "../App.styled";
 
 type Props = {
   display: string;
 };
 
-export const RBWrapper = styled.section<Props>`
-  border: 1px solid black;
-  background: ${GRADIENTS.blackPearlGradient};
-  height: 416px;
-  width: 412px;
-  border-radius: 30px;
-  padding: 32px;
-  padding-right: 40px;
+export const RBWrapper = styled(BoxWrapper)<Props>`
   display: ${(p) => p.display};
-  flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
 `;
 
