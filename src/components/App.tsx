@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { AppWrapper } from "./components/App.styled";
-import { RatingBox } from "./components/ratingBox/RatingBox";
-import { ThankYouBox } from "./components/thankYouBox/ThankYouBox";
+import { AppWrapper } from "./App.styled";
+import { RatingBox } from "./ratingBox/RatingBox";
+import { ThankYouBox } from "./thankYouBox/ThankYouBox";
 
 function App() {
   const [tYBoxDisplay, setTYBoxDisplay] = useState(false);
