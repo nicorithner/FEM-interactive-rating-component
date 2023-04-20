@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/FEM-interactive-rating-component/static/css/main.6d1555ea.css",
+    "main.js": "/FEM-interactive-rating-component/static/js/main.0b1555ec.js",
+    "static/media/overpass-all-400-normal.woff": "/FEM-interactive-rating-component/static/media/overpass-all-400-normal.dcdc1125b3c6f3ab2b02.woff",
+    "static/media/overpass-latin-400-normal.woff2": "/FEM-interactive-rating-component/static/media/overpass-latin-400-normal.ef7984c2adcbdea8e317.woff2",
+    "static/media/overpass-latin-ext-400-normal.woff2": "/FEM-interactive-rating-component/static/media/overpass-latin-ext-400-normal.d798d676df34693ca61e.woff2",
+    "static/media/overpass-cyrillic-400-normal.woff2": "/FEM-interactive-rating-component/static/media/overpass-cyrillic-400-normal.16773d421e423a7a2773.woff2",
+    "static/media/illustration-thank-you.svg": "/FEM-interactive-rating-component/static/media/illustration-thank-you.d74a66b551b99ae110b5362ed63106bf.svg",
+    "static/media/overpass-cyrillic-ext-400-normal.woff2": "/FEM-interactive-rating-component/static/media/overpass-cyrillic-ext-400-normal.6cd76e88f7f93a31e118.woff2",
+    "static/media/overpass-vietnamese-400-normal.woff2": "/FEM-interactive-rating-component/static/media/overpass-vietnamese-400-normal.ccdb23ecde61299ee73f.woff2",
+    "index.html": "/FEM-interactive-rating-component/index.html",
+    "static/media/icon-star.svg": "/FEM-interactive-rating-component/static/media/icon-star.12766a8d207af861a70f92500634c8be.svg",
+    "main.6d1555ea.css.map": "/FEM-interactive-rating-component/static/css/main.6d1555ea.css.map",
+    "main.0b1555ec.js.map": "/FEM-interactive-rating-component/static/js/main.0b1555ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d1555ea.css",
+    "static/js/main.0b1555ec.js"
+  ]
+}
