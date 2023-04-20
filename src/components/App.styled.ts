@@ -21,4 +21,10 @@ export const BoxWrapper = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+
+  @media only screen and (max-width: 400px) {
+    width: 327px;
+    height: 360px;
+    padding: 32px 24px;
+  }
 `;
