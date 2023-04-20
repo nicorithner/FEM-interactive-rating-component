@@ -1,21 +1,13 @@
 import styled from "styled-components";
-import { GRADIENTS, NEUTRAL, PRIMARY } from "../../constants";
+import { NEUTRAL, PRIMARY } from "../../constants";
+import { BoxWrapper } from "../App.styled";
 
 type Props = {
   display: string;
 };
 
-export const RBWrapper = styled.section<Props>`
-  border: 1px solid black;
-  background: ${GRADIENTS.blackPearlGradient};
-  height: 416px;
-  width: 412px;
-  border-radius: 30px;
-  padding: 32px;
-  padding-right: 40px;
+export const RBWrapper = styled(BoxWrapper)<Props>`
   display: ${(p) => p.display};
-  flex-direction: column;
-  justify-content: space-between;
   align-items: flex-start;
 `;
 
@@ -27,17 +19,32 @@ export const StarIconWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 400px) {
+    width: 40px;
+    height: 40px;
+    padding: 13.5px;
+  }
 `;
 
 export const StarIcon = styled.img`
   height: 16px;
-  widht: auto;
+
+  @media only screen and (max-width: 400px) {
+    height: 14px;
+  }
 `;
 
 export const TextWrapper = styled.div`
   margin-top: 30px;
   margin-bottom: 24px;
   width: 340px;
+
+  @media only screen and (max-width: 400px) {
+    width: auto;
+    margin-top: 16px;
+    margin-bottom: auto;
+  }
 `;
 
 export const RBTitle = styled.h2`
@@ -48,6 +55,11 @@ export const RBTitle = styled.h2`
   font-size: ${28 / 16}rem;
   line-height: ${35 / 16}rem;
   margin-bottom: 15px;
+
+  @media only screen and (max-width: 400px) {
+    font-size: ${24 / 16}rem;
+    line-height: ${30 / 16}rem;
+  }
 `;
 
 export const RBDescription = styled.p`
@@ -57,12 +69,21 @@ export const RBDescription = styled.p`
   font-weight: 400;
   font-size: ${16 / 16}rem;
   line-height: ${24 / 16}rem;
+
+  @media only screen and (max-width: 400px) {
+    font-size: ${14 / 16}rem;
+    line-height: ${22 / 16}rem;
+  }
 `;
 
 export const RBNumbersRow = styled.div`
   display: flex;
   justify-content: space-between;
   width: 340px;
+
+  @media only screen and (max-width: 400px) {
+    width: 279px;
+  }
 `;
 
 export const RBNumberCircle = styled.button`
@@ -91,6 +112,11 @@ export const RBNumberCircle = styled.button`
     background: ${NEUTRAL.mediumGray};
     color: ${NEUTRAL.white};
   }
+
+  @media only screen and (max-width: 400px) {
+    width: 42px;
+    height: 42px;
+  }
 `;
 
 export const RBSubmitButton = styled.button`
@@ -112,5 +138,13 @@ export const RBSubmitButton = styled.button`
   &:hover {
     background: ${NEUTRAL.white};
     color: ${PRIMARY.orange};
+  }
+
+  @media only screen and (max-width: 400px) {
+    margin-top: auto;
+    width: 279px;
+    height: 45px;
+    font-size: ${14 / 16}rem;
+    line-height: ${45 / 16}rem;
   }
 `;
