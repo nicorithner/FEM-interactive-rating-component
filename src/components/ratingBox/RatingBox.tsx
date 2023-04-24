@@ -21,7 +21,7 @@ export const RatingBox = (props: Props) => {
   return (
     <RBWrapper display={props.display ? "flex" : "none"}>
       <StarIconWrapper>
-        <StarIcon src={starIcon} alt="Thank you image" />
+        <StarIcon src={starIcon} alt="Image of star in orange" />
       </StarIconWrapper>
       <TextWrapper>
         <RBTitle>How did we do?</RBTitle>
