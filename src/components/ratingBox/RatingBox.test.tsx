@@ -1,12 +1,11 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { RatingBox } from "./RatingBox";
+import { RBNumberCircle } from "./RatingBox.styled";
 
 describe("Rating Box renders as expected", () => {
   beforeEach(() => {
-    render(
-      <RatingBox display={true} handleSubmit={() => {}} getRating={() => {}} />
-    );
+    render( <RatingBox display={true} handleSubmit={() => {}} getRating={() => {}} />);
   });
 
   it("has title 'How did we do?'", () => {
@@ -23,7 +22,16 @@ describe("Rating Box renders as expected", () => {
     expect(screen.getByRole("button", { name: /submit/i }));
   });
 
-  it.todo("has description");
-  it.todo("has number buttons");
-  it.todo("number buttons change to light gray when focused");
+  it("has number buttons", () => {
+    expect(screen.getByRole("button", { name: /1/ })).toHaveTextContent('1');
+    expect(screen.getByRole("button", { name: /2/ })).toHaveTextContent('2');
+    expect(screen.getByRole("button", { name: /3/ })).toHaveTextContent('3');
+    expect(screen.getByRole("button", { name: /4/ })).toHaveTextContent('4');
+    expect(screen.getByRole("button", { name: /5/ })).toHaveTextContent('5');
+  });
+
+  it("has description", () => {
+    expect(screen.getByText(/please let us know/i))
+  });
+
 });
